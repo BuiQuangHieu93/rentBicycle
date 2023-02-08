@@ -1,13 +1,870 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.Heading {
+  background-image: url("./image/heading-image_1.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 605px;
+  background-size: cover;
+  position: relative;
+}
+
+.Heading-container {
+  display: block;
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px 0px;
+}
+
+.heading-bar {
+  display: flex;
+  background-color: #fff;
+  height: 46px;
+}
+
+.Navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.NavItem {
+  padding: 0px;
+  margin: auto;
+}
+
+.NavLink {
+  list-style-type: none;
+  text-decoration: none;
+  color: #000;
+}
+
+.Login-btn {
+  width: 20%;
+  background-color: #0069a4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Login-btn .Login-text {
+  width: 100%;
+  background-color: #0069a4;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: none;
+  text-decoration: none;
+}
+
+.Login-btn:hover .Login-text {
+  background-color: #59b0e3;
+  color: #000;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* start login page */
+.login {
+  height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.listItem {
+  padding: 0px 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 60%;
+  height: 75%;
+  -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.left,
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.or {
+  border: 2px solid lightgray;
+  border-radius: 50%;
+  padding: 10px;
+  color: gray;
+  background-color: white;
+  font-weight: bold;
+}
+
+.line {
+  width: 0.5px;
+  height: 70%;
+  background-color: lightgray;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+.loginButton {
+  width: 150px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.google {
+  background-color: #df4930;
+}
+
+.facebook {
+  background-color: #507cc0;
+}
+
+.github {
+  background-color: black;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+input {
+  width: 200px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+
+.submit {
+  width: 200px;
+  background-color: rgba(128, 0, 128, 0.671);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.loginTitle {
+  position: absolute;
+  top: 150px;
+  color: lightgray;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* end login page */
+
+.Social_network {
+  display: flex;
+  width: 100%;
+  height: 46px;
+  flex-direction: row-reverse;
+  margin-top: 12px;
+}
+
+.Icon {
+  padding: 0px 20px;
+}
+
+.IconName {
+  color: #fff;
+}
+
+.Tutorial {
+  width: 980px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+.Tutorial-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Item-title {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding-bottom: 8px;
+}
+
+.title-blue {
+  color: #59b0e3;
+}
+
+.title-green {
+  color: #a2b43a;
+}
+
+.Item-detail {
+  padding-bottom: 16px;
+}
+
+.Item-btn {
+  background-color: #a2b43a;
+  height: 40px;
+  border-radius: 32px;
+  width: 136px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.possibilities {
+  background: url("./image/background-bloc-velo.png");
+  height: 660px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.possibilities-title {
+  text-align: center;
+  font-size: 32px;
+  padding-top: 64px;
+}
+
+.possibilities-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+.possi-image1 {
+  background: url("./image/force_meca.png");
+  height: 250px;
+  width: 200px;
+  background-size: cover;
+}
+
+.possi-image {
+  background: url("./image/velo.png");
+  width: 100%;
+  height: 554px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.possi-image2 {
+  background: url("./image/force_eclair.png");
+  height: 250px;
+  width: 135px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.possi-item {
+  display: flex;
+  flex-direction: column;
+  width: 33.33333%;
+  justify-content: center;
+  align-items: center;
+}
+
+.possi-title {
+  font-size: 24px;
+  padding: 32px 0 32px 0;
+}
+
+.possi-details {
+  padding: 0px 100px 100px 100px;
+  text-align: center;
+}
+
+/* begin subscription css */
+
+.Subscription-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+
+.Subscription-item {
+  width: 23%;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Subscription-title,
+.Subscription-time,
+.Subscription-desp,
+.Subscription-btn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.Subscription-title {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.Subscription-time {
+  font-weight: 500;
+}
+
+.Subscription-btn {
+  background-color: #a2b43a;
+  border-radius: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+}
+
+.Subscription-btn-name {
+  color: #fff;
+}
+
+.Sub-item {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.Subscription-item-special {
+  background-color: #fff;
+  display: flex;
+  padding: 50px 0px;
+}
+
+.Sub-item-item {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+
+  flex-direction: column;
+  height: 40%;
+}
+
+.Sub-item-title {
+  font-weight: 500;
+  padding-bottom: 12px;
+}
+
+.Sub-item-btn {
+  height: 55px;
+  border-radius: 55px;
+  background-color: #59b0e3;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Sub-item-btn-name {
+  color: #fff;
+}
+
+/* end subscription css */
+
+/* begin subscribe page */
+
+.Heading-subpage {
+  background-image: url("./image/heading-image-2.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 605px;
+  background-size: cover;
+  position: relative;
+}
+
+.Heading-container-subpage {
+  display: block;
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px 0px;
+}
+
+.The-Subscription {
+  margin-bottom: 24px;
+}
+
+.Sub-container {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.Sub-heading .Sub-title {
+  font-size: 24px;
+  padding: 24px 0 8px 0;
+}
+
+.Sub-heading .Sub-detail {
+  padding-bottom: 24px;
+}
+
+.Sub-item-container {
+  display: flex;
+  flex-direction: row;
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Sub-page-item,
+.Sub-page-item-below {
+  flex: 1;
+  padding: 12px;
+}
+
+.Sub-page-item-below {
+  min-width: 33%;
+}
+
+.Sub-item-heading {
+  background-color: #ccc;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.Sub-item-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #ccc;
+  border-radius: 4px;
+  padding: 16px;
+  height: 254px;
+  justify-content: space-between;
+}
+
+.Sub-item-detail {
+  text-align: start;
+}
+
+.Sub-item-body .Sub-item-btn {
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.Sub-item-col {
+  flex: 1;
+}
+
+.Sub-item-col .Sub-page-item {
+  padding: 32px;
+}
+
+.Temp-packages {
+  background-color: #f1f1f1;
+}
+
+.Temp-packages .Sub-item-heading,
+.Temp-packages .Sub-item-body {
+  background-color: #fff;
+}
+
+/* end subscribe page */
+
+/* open footer */
+
+.footer {
+  background-color: #0069a4;
+  color: #fff;
+  padding: 20px 0px 140px 0px;
+}
+
+.footer-contain {
+  display: flex;
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+.footer-about,
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 200px;
+}
+
+.footer-about-title,
+.footer-about-deps,
+.footer-about-btn,
+.footer-contact-title,
+.btn-contain,
+.footer-contact-title,
+.footer-contact-type,
+.footer-contact-name,
+.footer-contact-mail {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-about-title,
+.footer-contact-title {
+  font-weight: 450;
+  font-size: 1.26rem;
+  padding: 10px 0;
+}
+
+.footer-about-btn {
+  background-color: #a2b43a;
+  width: 150px;
+  border-radius: 22px;
+  margin: 10px;
+  padding: 5px 0px;
+}
+
+.white-line {
+  width: 980px;
+  height: 1px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.download-link-contain,
+.download-app {
+  display: flex;
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-evenly;
+}
+
+.download-app {
+  font-weight: 500;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.download-btn-name {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* end footer */
+
+/* begin contact */
+
+.Heading-contact {
+  background-image: url("./image/heading-image-3.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1300px;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Form-container {
+  width: 600px;
+  height: 950px;
+  background-color: rgba(256, 256, 256, 0.3);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 64px;
+}
+
+.Form-customer-service {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.Form-phone-number {
+  font-size: 24px;
+  font-weight: 400;
+  opacity: 70%;
+  letter-spacing: 1px;
+  padding: 10px 0px;
+}
+
+.Form-detail {
+  opacity: 70%;
+  padding: 16px 0px;
+}
+
+.Form-container-input {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Name-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.Form-name {
+  width: 230px;
+}
+
+.Form-email {
+  width: 95%;
+}
+
+.input-setting {
+  padding: 6px 12px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 5px;
+}
+
+.Submit-btn {
+  background-color: #a2b43a;
+  width: 65%;
+  height: 55px;
+  border-radius: 55px;
+  align-self: center;
+  margin-top: 56px;
+  border: none;
+}
+
+.Contact-type {
+  font-weight: 400;
+  display: flex;
+  margin: 8px 0px 16px 0px;
+}
+
+.Contact-form {
+  font-size: 32px;
+  margin-bottom: 2rem;
+}
+
+/* end contact */
+
+.Mappage-container {
+  display: flex;
+}
+
+.map-container {
+  width: 80%;
+  height: 100vh;
+}
+
+/* start weather css */
+
+.Weather-api {
+  width: 20%;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.Weather-container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: #ccc;
+  border-radius: 24px;
+  margin: 8px;
+}
+
+.City-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Weather-group {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.Weather-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.City-temp,
+.Weather-details {
+  flex: 1;
+  min-width: 40%;
+}
+
+.Weather-img {
+  width: 130px;
+}
+
+.City-temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Temp-value {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.City-weather-type {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.City-name {
+  font-weight: 500;
+}
+
+/* end weather css */
+
+.Heading-container-test {
+  background-color: #a2b43a;
+}
+
+.Heading-cover {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px 0;
+}
+
+/* start admin page */
+.admin-contain-total {
+  position: relative;
+}
+
+.admin-heading {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: #59b0e3;
+  border-radius: 5px;
+  height: 200px;
+  justify-content: space-evenly;
+  width: 100px;
+  align-items: center;
+  margin-top: 155px;
+  margin-left: 5px;
+}
+
+.admin-member-heading,
+.admin-stations-heading,
+.admin-dashboard-heading {
+  color: #fff;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.admim-body {
+  width: 1400px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.admin-members tbody tr th,
+.admin-stations tbody tr th {
+  font-weight: 400;
+}
+
+table {
+  width: 100%;
+}
+.admin-members,
+.admin-stations,
+.admin-dashboards {
+  background-color: #ccc;
+  margin: 24px;
+  border-radius: 4px;
+}
+
+.admin-dashboard-item {
+  display: flex;
+  justify-content: space-around;
+  padding: 24px 0px;
+}
+
+/* end admin page */
